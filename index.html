@@ -1,0 +1,114 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;800&family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      /* input[type="number"] {
+        -moz-appearance: textfield;
+      } */
+    </style>
+
+    <!-- Font Awesome CDN
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <div class="description">
+          <h1>Jimmy’s Diner</h1>
+          <p>The best burgers and pizzas in town.</p>
+        </div>
+      </div>
+
+      <div class="main-app">
+        <div class="container"></div>
+
+        <div class="order-data"></div>
+
+        <div class="modal">
+          <div class="form-details">
+            <h3 for="form-data">Enter card details</h3>
+            <form class="form-data" id="form-data">
+              <input
+                class="form-name"
+                type="text"
+                id="form-name"
+                name="form-name"
+                value=""
+                placeholder="Enter your name"
+              />
+
+              <input
+                class="form-card-number"
+                type="tel"
+                id="form-card-number"
+                name="form-card-number"
+                placeholder="Enter card number"
+                inputmode="numeric"
+                pattern="[0-9\s]{13,19}"
+                autocomplete="cc-number"
+                maxlength="19"
+                minlength="12"
+              />
+
+              <input
+                class="form-cvv"
+                type="tel"
+                id="form-cvv"
+                name="form-cvv"
+                value=""
+                placeholder="Enter CVV"
+                inputmode="numeric"
+                pattern="[0-9\s]{3,4}"
+                autocomplete="cc-number"
+                minlength="3"
+                maxlength="4"
+              />
+
+              <button class="btn pay">Pay</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="order-completed"></div>
+      </div>
+    </main>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
