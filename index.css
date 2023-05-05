@@ -1,0 +1,327 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-app {
+  padding: 0px 50px;
+}
+/* =========================================================== */
+/* HEADER CSS */
+
+.header {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  /* justify-content: center; */
+
+  background-image: url("img/burger-logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.description {
+  color: white;
+  padding: 0px 0px 0px 45px;
+  margin: auto 0;
+}
+
+h1 {
+  font-family: "Smythe", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 24px;
+}
+
+.description p {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 14px;
+}
+/* =========================================================== */
+/* CONTAINER */
+
+/* === */
+.options-for-card {
+  border-bottom: 1px solid #d2d2d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* === */
+.option-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.option-img {
+  width: 70px;
+  height: 90px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px 0px 0px;
+}
+
+.option-name {
+  color: black;
+
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 14px;
+}
+
+.option-ingredients {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 10px;
+  color: #8b8b8b;
+  line-height: 15px;
+}
+
+.option-price {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+/* === */
+.option-add {
+  display: flex;
+  align-content: center;
+}
+/* === */
+
+.circle {
+  border: 2px solid #dedede;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  opacity: 0.7;
+  transition: transform 150ms;
+}
+
+.circle:active {
+  transform: scale(1.2);
+}
+
+.icon {
+  display: inline-block;
+  height: 15px;
+  line-height: 15px;
+  position: relative;
+  top: 2px;
+}
+
+.icon-plus::before {
+  content: "+";
+  font-size: 20px;
+}
+/* =========================================================== */
+
+/* =========================================================== */
+/* FOOTER */
+.card-order {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal_visible {
+  display: flex;
+}
+
+/* =========================================================== */
+/* CARD */
+/* <div class="option-order" data-remove="${id}">
+    <span class="order-name">${name}</span><p class="remove">remove</p><span class="space"></span><span class="order-price">${price}</span>
+</div>` */
+.order-data {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  margin: 50px 0px 0px;
+
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+.order-data h3 {
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 17px;
+
+  color: #000000;
+
+  margin: 20px 0px 50px;
+}
+
+.option-order {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+
+  color: #bbbbbb;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding-top: 20px;
+  border-top: 2px solid black;
+}
+
+.meal-discount {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+
+  color: crimson;
+}
+
+.complete-order {
+  margin: 50px 0px 0px;
+}
+/* =========================================================== */
+/* FORM */
+.form-details {
+  margin: 0 38px;
+  width: 500px;
+  height: 500px;
+  padding: 25px;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  border-radius: 4px;
+  border: 1px solid #8b8b8b;
+  background: white;
+  box-shadow: 0px 0px 200px #000000;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-details h3 {
+  display: block;
+  margin: 15px auto;
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+input {
+  width: 100%;
+  height: 70px;
+  border: 1px solid #757575;
+  border-radius: 4px;
+  margin: 20px 0px 0px;
+  padding: 0px 25px;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+}
+
+.pay {
+  margin: 36px 0px 29px;
+}
+
+.btn {
+  width: 100%;
+  height: 70px;
+
+  background: #16db99;
+  border-radius: 4px;
+  border: none;
+
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+/* =========================================================== */
+/* ORDER COMPLETE */
+.order-completed {
+  width: 100%;
+  height: 120px;
+  margin: 45px auto;
+  padding: 0px 30px;
+
+  /* background: #ECFDF5; */
+  border-radius: 3px;
+  font-family: "Smythe";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #065f46;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================================================== */
